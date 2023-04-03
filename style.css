@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover,
+a:focus {
+    color: blue;
+}
+
+.logo-image {
+    width: 40%;
+    height: auto;
+    opacity: 0.25;
+}
+
+section {
+    /* background: red; */
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.modal-heading {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+.modal {
+    max-width: 500px;
+    padding: 2rem;
+    border: 0;
+    border-radius: 15px;
+    box-shadow: 0 0 1em rgb( 0 0 0 / 0.3);
+    background: linear-gradient(135deg, #DDF6FD , #005B7E);
+    color: #fff;
+    position: relative;
+}
+
+.modal::backdrop {
+    background: rgb(0 0 0 / 0.4);
+}
+
+.form {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+label {
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+}
+
+input {
+    padding: 1rem;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 35px;
+    outline: 1px solid #fff;
+    box-shadow: 4px 8px 18px #40404040;
+}
+
+button {
+    background: #FE8618;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    /* font-weight: 700; */
+    padding: 1rem;
+    margin: 1rem 0 0 0;
+    border-radius: 35px;
+    border: none;
+    box-shadow: 4px 8px 8px #40404040;
+}
+
+button:hover,
+button:focus {
+    cursor: pointer;
+    background: #cE560895;
+}
+
+button:active {
+    outline: #FE8618;
+    color: #FE8618;
+    background: #DDF6FD;
+}
+
+.account-link {
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+}
+
+.btn.close-btn {
+    position: absolute;
+    top: 1px;
+}
+
+#errorMsg{
+    color:red;
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 20px;
+
+}
+
+@media (min-width: 675px) {
+    
+    section {
+        gap: 0.5rem;
+        width: 50%;
+    }
+
+    .logo-image {
+        width: 60%;
+    }
+
+    .modal-heading {
+        font-size: 1.5rem;
+    }
+    
+    .modal {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        max-width: 500px;
+    }
+
+    .form { 
+        width: 50%;
+        gap: 0rem;
+        margin: 0;
+    }
+
+    label,
+    input {
+        font-size: 0.75rem;
+        padding: 0.5rem;
+    }
+
+    button {
+        font-size: 0.75rem;
+        padding: 0.5rem;
+        margin: 1.5rem 0 1rem 0;
+    }
+
+    .account-link {
+        font-size: 0.75rem;
+        letter-spacing: normal;
+        width: 80%;
+        align-self: center;
+    }
+
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" class="btn open-btn">Open</button>
+    <div id="errorMsg"></div>
+    <dialog class="modal" open>
+        <section>
+            <img src="./assets/sign-up-logo.png" height="200" width="200" alt="company logo" class="logo-image"/>
+            <h2 class="modal-heading">Sign Up</h2>
+        </section>
+        <!-- Form with method attribute set to "dialog" -->
+        <form class="form" id="form" method="dialog">
+            <label for="input-email">Email address</label>
+            <input
+                id="input-email"
+                name="email"
+                placeholder=""
+                autocapitalize="off"
+                autocorrect="off"
+                spellcheck="false"
+                type="email">
+            <label for="input-password">Password</label>
+            <input
+                id="input-password"
+                name="password"
+                autocapitalize="off"
+                autocorrect="off"
+                spellcheck="false"
+                type="password">
+            <label for="password-confirmation">Confirm Password</label>
+            <input type="password" name="password-confirmation" id="password-confirmation">
+            
+            <button type="button" id="sign-up-btn">Sign Up</button>
+            <span class="account-link">Already have an account? <a href="" class="login-link">Login</a></span>
+        </form>
+        <!-- Close button for dialog modal -->
+        <button type="button" class="btn close-btn">Close</button>
+
+    </dialog>
+    <script src="main.js"></script>
+</body>
+</html>
